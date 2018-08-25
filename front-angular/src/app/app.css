@@ -1,0 +1,36 @@
+.item-container {
+  border: solid 1px;
+}
+
+.item-content{
+  padding: 25px 35px;
+}
+
+h2, h3{
+  margin-top: 0;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.delete-button {
+  margin: 7px;
+}
+
+.edit-button {
+  margin: 9px;
+  padding: 6px 20px;
+}
+
+.add-button {
+  float: right;
+  padding: 16px 21px;
+  font-size: 24px;
+}
+
+.filter-container {
+  text-align: center;
+}

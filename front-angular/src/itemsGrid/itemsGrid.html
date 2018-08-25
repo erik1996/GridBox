@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="filter-container col-md-7 col-md-offset-3">
+    <h3>Filter</h3>
+    <form ng-submit="$ctrl.fetchItems()">
+      <input type="text" name="name" placeholder="Name" ng-model="$ctrl.searchData.name">
+      <input type="text" name="price" placeholder="Price" ng-model="$ctrl.searchData.price">
+      <input type="text" name="code" placeholder="Code" ng-model="$ctrl.searchData.code">
+      <input type="submit">
+    </form>
+  </div>
+  <div class="col-md-2">
+    <a class="btn btn-primary add-button" ng-link="['ItemFormAdd']">Add New Item</a>
+  </div>
+</div>
+
+
+
+<div gridster='$ctrl.options'>
+  <div>
+    <div gridster-item ng-repeat="item in $ctrl.items">
+      <grid-item item="item" />
+    </div>
+  </div>
+</div>
